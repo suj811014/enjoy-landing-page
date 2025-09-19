@@ -1,0 +1,37 @@
+{
+    "title": "我們的學習成果",
+    "subtitle": "數字見證我們的成長與學員的成功",
+    "stats": [{
+            "id": 1,
+            "icon": "people",
+            "count": 15000,
+            "suffix": "",
+            "label": "活躍學員",
+            "description": "來自全球的學習夥伴"
+        },
+        {
+            "id": 2,
+            "icon": "public",
+            "count": 35,
+            "suffix": "",
+            "label": "服務國家",
+            "description": "遍布五大洲"
+        },
+        {
+            "id": 3,
+            "icon": "auto_awesome",
+            "count": 8500,
+            "suffix": "",
+            "label": "客製化課程",
+            "description": "量身打造的學習體驗"
+        },
+        {
+            "id": 4,
+            "icon": "emoji_events",
+            "count": 96,
+            "suffix": "%",
+            "label": "滿意度",
+            "description": "學員推薦率"
+        }
+    ]
+}

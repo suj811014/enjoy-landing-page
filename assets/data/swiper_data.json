@@ -1,0 +1,28 @@
+{
+    "title": "熱門學習主題",
+    "slides": [{
+            "id": 1,
+            "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+            "title": "AI 人工智慧",
+            "description": "探索最新 AI 技術，開啟智慧未來。"
+        },
+        {
+            "id": 2,
+            "image": "https://images.unsplash.com/photo-1627398242454-45a1465c2479?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+            "title": "網頁前端",
+            "description": "學習 HTML、CSS、JS，打造互動網站。"
+        },
+        {
+            "id": 3,
+            "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+            "title": "網頁後端",
+            "description": "掌握伺服器與資料庫，實現完整網站功能。"
+        },
+        {
+            "id": 4,
+            "image": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+            "title": "自我成長",
+            "description": "養成持續學習習慣，提升自我競爭力。"
+        }
+    ]
+}

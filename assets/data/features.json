@@ -1,0 +1,41 @@
+{
+    "title": "為什麼選擇我們？",
+    "subtitle": "我們提供最優質的學習體驗，讓每位學員都能找到適合自己的學習方式",
+    "features": [{
+            "id": 1,
+            "icon": "schedule",
+            "title": "彈性學習時間",
+            "description": "隨時隨地，依照自己的步調學習，不受時間和地點限制"
+        },
+        {
+            "id": 2,
+            "icon": "school",
+            "title": "專業師資團隊",
+            "description": "由業界資深專家親自授課，提供最實用的知識與技能"
+        },
+        {
+            "id": 3,
+            "icon": "groups",
+            "title": "互動學習社群",
+            "description": "與同學交流討論，分享學習心得，一起成長進步"
+        },
+        {
+            "id": 4,
+            "icon": "workspace_premium",
+            "title": "專業認證課程",
+            "description": "完成課程可獲得業界認可的專業證書，提升職場競爭力"
+        },
+        {
+            "id": 5,
+            "icon": "support_agent",
+            "title": "24小時客服支援",
+            "description": "專業客服團隊隨時為您解答疑問，提供完善的學習支援"
+        },
+        {
+            "id": 6,
+            "icon": "trending_up",
+            "title": "持續更新內容",
+            "description": "課程內容隨著產業趨勢不斷更新，確保學到最新知識"
+        }
+    ]
+}
