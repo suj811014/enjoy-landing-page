@@ -672,76 +672,42 @@ main {
     margin-bottom: 1rem;
 }
 
-.enjoy__page-text {
-    font-size: 1rem;
-    color: #555;
-}
 
+/* 整合聯絡頁面樣式 */
 
-/* Contact Form */
-
-.enjoy__contact-section {
+.enjoy__contact-combined-section {
     position: relative;
-    min-height: 520px;
+    min-height: 100vh;
     background: linear-gradient(120deg, #e0f7fa 0%, #f3e7ff 100%);
     overflow: hidden;
     padding-top: 80px;
+    padding-bottom: 2rem;
 }
 
-.enjoy__contact-content {
-    padding: 3rem;
+.enjoy__contact-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    padding: 2rem;
+    min-height: 700px;
 }
 
-.enjoy__contact-form {
+
+/* 左側區塊：地圖和聯絡資訊 */
+
+.enjoy__contact-left {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    margin-top: 1.5rem;
-}
-
-.enjoy__form-input,
-.enjoy__form-textarea {
-    padding: 0.8rem;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    font-size: 1rem;
-}
-
-.enjoy__contact-form button {
-    align-self: center;
-    padding: 0.75rem 3rem;
-    width: 160px;
-    border: none;
-    border-radius: 30px;
-    background: var(--color-main);
-    color: #fff;
-    cursor: pointer;
-    transition: 0.3s;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-
-.enjoy__contact-form button:hover {
-    background: var(--color-dark);
-}
-
-
-/* Map & Contact Info Section */
-
-.enjoy__map-section {
-    padding: 0;
-    background: var(--bg-white);
-}
-
-.enjoy__map-wrapper {
-    position: relative;
-    padding: 3.5rem;
-    display: flex;
+    background: #fff;
+    border-radius: 20px 0 0 20px;
     overflow: hidden;
+    box-shadow: 0 10px 40px rgba(100, 117, 207, 0.1);
 }
 
 .enjoy__map-container {
-    flex: 1;
+    height: 400px;
+    width: 100%;
     position: relative;
 }
 
@@ -751,49 +717,135 @@ main {
     border: none;
 }
 
-.enjoy__contact-panel {
-    width: 400px;
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
+.enjoy__contact-info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 1.5rem;
+    background: #f8f9ff;
+    flex-grow: 1;
+}
+
+
+/* 右側區塊：聯絡表單 */
+
+.enjoy__contact-right {
+    flex: 1;
+    background: #fff;
+    border-radius: 0 20px 20px 0;
     padding: 2rem;
+    box-shadow: 0 10px 40px rgba(100, 117, 207, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.enjoy__contact-content {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.enjoy__contact-subtitle {
+    color: #666;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+.enjoy__contact-form {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
-    box-shadow: -4px 0 20px rgba(0, 0, 0, 0.1);
-    border-left: 1px solid rgba(0, 0, 0, 0.05);
+    gap: 1.2rem;
+    margin-top: 2rem;
 }
+
+.enjoy__form-group {
+    width: 100%;
+}
+
+.enjoy__form-input,
+.enjoy__form-textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 1rem;
+    background: #f9faff;
+    transition: all 0.3s ease;
+}
+
+.enjoy__form-input:focus,
+.enjoy__form-textarea:focus {
+    border-color: var(--color-main);
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(100, 117, 207, 0.1);
+}
+
+.enjoy__form-textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.enjoy__contact-submit-btn {
+    align-self: flex-start;
+    margin-top: 1rem;
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    background: linear-gradient(90deg, var(--color-main) 0%, var(--color-accent) 100%);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(100, 117, 207, 0.2);
+}
+
+.enjoy__contact-submit-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(100, 117, 207, 0.3);
+    background: linear-gradient(90deg, var(--color-accent) 0%, var(--color-dark) 100%);
+}
+
+
+/* 聯絡資訊卡片 */
 
 .enjoy__contact-info-card {
     display: flex;
     align-items: center;
     gap: 1rem;
-    padding: 1.5rem;
+    padding: 1.2rem;
     background: #fff;
-    border-radius: 16px;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
-    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
 }
 
 .enjoy__contact-info-card:hover {
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
-    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(100, 117, 207, 0.15);
+    transform: translateY(-3px);
 }
 
 .enjoy__contact-info-icon {
     width: 50px;
     height: 50px;
     border-radius: 12px;
-    background: #f8f9fa;
+    background: linear-gradient(135deg, var(--color-main) 0%, var(--color-accent) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.enjoy__contact-info-card:hover .enjoy__contact-info-icon {
+    transform: rotate(10deg) scale(1.1);
+    background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-dark) 100%);
 }
 
 .enjoy__contact-info-icon i {
     font-size: 1.5rem;
-    color: #666;
+    color: #fff;
 }
 
 .enjoy__contact-info-content {
@@ -820,31 +872,45 @@ main {
 
 /* 響應式設計 */
 
-@media (max-width: 1024px) {
-    .enjoy__contact-panel {
-        width: 350px;
+@media (max-width: 1200px) {
+    .enjoy__contact-container {
         padding: 1.5rem;
     }
-    .enjoy__contact-info-card {
-        padding: 1.2rem;
+    .enjoy__contact-info-grid {
+        grid-template-columns: 1fr;
+    }
+    .enjoy__contact-content {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .enjoy__contact-container {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .enjoy__contact-left {
+        border-radius: 20px 20px 0 0;
+        margin-bottom: 0;
+    }
+    .enjoy__contact-right {
+        border-radius: 0 0 20px 20px;
+        padding: 1.5rem;
+    }
+    .enjoy__contact-info-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 1rem;
     }
 }
 
 @media (max-width: 768px) {
-    .enjoy__map-wrapper {
-        flex-direction: column;
-        height: auto;
+    .enjoy__contact-combined-section {
+        padding-top: 70px;
+        padding-bottom: 1rem;
     }
-    .enjoy__map-container {
-        height: 300px;
-        order: 1;
-    }
-    .enjoy__contact-panel {
-        width: 100%;
-        order: 2;
-        box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
-        border-left: none;
-        border-top: 1px solid rgba(0, 0, 0, 0.05);
+    .enjoy__contact-info-grid {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
     }
     .enjoy__contact-info-card {
         padding: 1rem;
@@ -855,6 +921,37 @@ main {
     }
     .enjoy__contact-info-icon i {
         font-size: 1.3rem;
+    }
+    .enjoy__contact-content {
+        padding: 1rem;
+    }
+    .enjoy__map-container {
+        height: 250px;
+    }
+    .enjoy__page-title {
+        font-size: 1.8rem;
+    }
+    .enjoy__contact-subtitle {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .enjoy__contact-container {
+        padding: 0.8rem;
+    }
+    .enjoy__contact-submit-btn {
+        width: 100%;
+        padding: 0.8rem;
+        font-size: 1rem;
+    }
+    .enjoy__form-input,
+    .enjoy__form-textarea {
+        padding: 0.8rem;
+    }
+    .enjoy__map-container {
+        height: 200px;
     }
 }
 
@@ -1538,17 +1635,7 @@ main {
 }
 
 
-/* 將 .avatar 和 .parallax 的樣式合併，並給予明確尺寸 */
-
-.avatar.parallax {
-    /* 組合選擇器，優先級更高 */
-    position: absolute;
-    top: 0;
-    right: 5%;
-    width: 40%;
-    height: 100%;
-    /* 確保高度來自父層 */
-}
+/* Parallax 樣式 */
 
 
 /* 確保所有 layer 元素都是絕對定位 */

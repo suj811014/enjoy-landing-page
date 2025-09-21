@@ -31,95 +31,110 @@
       </nav>
     </header>
 
-    <!-- Contact Section -->
-    <section class="enjoy__contact-section">
-      <div class="enjoy__container">
-        <div class="enjoy__contact-content">
-          <h1 class="enjoy__page-title">聯絡我們</h1>
-          <form class="enjoy__contact-form">
-            <input
-              type="text"
-              placeholder="姓名"
-              class="enjoy__form-input"
-              required
-            />
-            <input
-              type="email"
-              placeholder="Email"
-              class="enjoy__form-input"
-              required
-            />
-            <textarea
-              placeholder="留言內容"
-              class="enjoy__form-textarea"
-              rows="5"
-              required
-            ></textarea>
-            <button type="submit" class="enjoy__btn enjoy__btn--primary">
-              送出
-            </button>
-          </form>
-        </div>
-      </div>
-    </section>
-
-    <!-- Map & Contact Info Section -->
-    <section class="enjoy__map-section">
-      <div class="enjoy__map-wrapper">
-        <!-- Map Container -->
-        <div class="enjoy__map-container">
-          <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.8476845935797!2d120.67638797596285!3d24.095439376255447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d6b9b2f3b3b%3A0x3b1b3b3b3b3b3b3b!2z5Y-w5Lit5biC5aSn6YeM5Y2A56We6IiI6LevNTIx6Jmf!5e0!3m2!1szh-TW!2stw!4v1702000000000!5m2!1szh-TW!2stw"
-            width="100%" 
-            height="100%" 
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade"
-            title="台中市大里區祥興路521號地圖">
-          </iframe>
+    <!-- 整合的聯絡頁面區塊 -->
+    <section class="enjoy__contact-combined-section">
+      <div class="enjoy__contact-container">
+        <!-- 左側區塊：地圖和聯絡資訊 -->
+        <div class="enjoy__contact-left">
+          <!-- Map Container -->
+          <div class="enjoy__map-container">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.8476845935797!2d120.67638797596285!3d24.095439376255447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d6b9b2f3b3b%3A0x3b1b3b3b3b3b3b3b!2z5Y-w5Lit5biC5aSn6YeM5Y2A56We6IiI6LevNTIx6Jmf!5e0!3m2!1szh-TW!2stw!4v1702000000000!5m2!1szh-TW!2stw"
+              width="100%" 
+              height="100%" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+              title="台中市大里區祥興路521號地圖">
+            </iframe>
+          </div>
+          
+          <!-- Contact Info Cards -->
+          <div class="enjoy__contact-info-grid">
+            <div class="enjoy__contact-info-card">
+              <div class="enjoy__contact-info-icon">
+                <i class="material-icons">place</i>
+              </div>
+              <div class="enjoy__contact-info-content">
+                <h3 class="enjoy__contact-info-label">地址</h3>
+                <p class="enjoy__contact-info-value">台中市南區學習路123號</p>
+              </div>
+            </div>
+            
+            <div class="enjoy__contact-info-card">
+              <div class="enjoy__contact-info-icon">
+                <i class="material-icons">camera_alt</i>
+              </div>
+              <div class="enjoy__contact-info-content">
+                <h3 class="enjoy__contact-info-label">Instagram</h3>
+                <p class="enjoy__contact-info-value">tammy_art.hsiao</p>
+              </div>
+            </div>
+            
+            <div class="enjoy__contact-info-card">
+              <div class="enjoy__contact-info-icon">
+                <i class="material-icons">chat</i>
+              </div>
+              <div class="enjoy__contact-info-content">
+                <h3 class="enjoy__contact-info-label">Line</h3>
+                <p class="enjoy__contact-info-value">LineID: @deseven</p>
+              </div>
+            </div>
+            
+            <div class="enjoy__contact-info-card">
+              <div class="enjoy__contact-info-icon">
+                <i class="material-icons">phone</i>
+              </div>
+              <div class="enjoy__contact-info-content">
+                <h3 class="enjoy__contact-info-label">電話</h3>
+                <p class="enjoy__contact-info-value">+886 963816377</p>
+              </div>
+            </div>
+          </div>
         </div>
         
-        <!-- Contact Info Panel -->
-        <div class="enjoy__contact-panel">
-          <div class="enjoy__contact-info-card">
-            <div class="enjoy__contact-info-icon">
-              <i class="material-icons">place</i>
-            </div>
-            <div class="enjoy__contact-info-content">
-              <h3 class="enjoy__contact-info-label">Address</h3>
-              <p class="enjoy__contact-info-value">台中市南區學習路123號</p>
-            </div>
-          </div>
-          
-          <div class="enjoy__contact-info-card">
-            <div class="enjoy__contact-info-icon">
-              <i class="material-icons">camera_alt</i>
-            </div>
-            <div class="enjoy__contact-info-content">
-              <h3 class="enjoy__contact-info-label">Instagram</h3>
-              <p class="enjoy__contact-info-value">tammy_art.hsiao</p>
-            </div>
-          </div>
-          
-          <div class="enjoy__contact-info-card">
-            <div class="enjoy__contact-info-icon">
-              <i class="material-icons">chat</i>
-            </div>
-            <div class="enjoy__contact-info-content">
-              <h3 class="enjoy__contact-info-label">Line</h3>
-              <p class="enjoy__contact-info-value">LineID: @deseven</p>
-            </div>
-          </div>
-          
-          <div class="enjoy__contact-info-card">
-            <div class="enjoy__contact-info-icon">
-              <i class="material-icons">phone</i>
-            </div>
-            <div class="enjoy__contact-info-content">
-              <h3 class="enjoy__contact-info-label">Call</h3>
-              <p class="enjoy__contact-info-value">+886 963816377</p>
-            </div>
+        <!-- 右側區塊：聯絡表單 -->
+        <div class="enjoy__contact-right">
+          <div class="enjoy__contact-content">
+            <h1 class="enjoy__page-title">聯絡我們</h1>
+            <p class="enjoy__contact-subtitle">有任何問題或想法嗎？歡迎填寫表單與我們聯繫</p>
+            <form class="enjoy__contact-form">
+              <div class="enjoy__form-group">
+                <input
+                  type="text"
+                  placeholder="姓名"
+                  class="enjoy__form-input"
+                  required
+                />
+              </div>
+              <div class="enjoy__form-group">
+                <input
+                  type="email"
+                  placeholder="Email"
+                  class="enjoy__form-input"
+                  required
+                />
+              </div>
+              <div class="enjoy__form-group">
+                <input
+                  type="tel"
+                  placeholder="電話 (選填)"
+                  class="enjoy__form-input"
+                />
+              </div>
+              <div class="enjoy__form-group">
+                <textarea
+                  placeholder="留言內容"
+                  class="enjoy__form-textarea"
+                  rows="6"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="enjoy__btn enjoy__btn--primary enjoy__contact-submit-btn">
+                送出訊息
+              </button>
+            </form>
           </div>
         </div>
       </div>

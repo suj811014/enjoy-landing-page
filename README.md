@@ -1,10 +1,10 @@
-# Enjoy Landing Page ![版本](https://img.shields.io/badge/版本-1.0.0-blue)
+# Enjoy Landing Page ![版本](https://img.shields.io/badge/版本-1.1.0-blue)
 
 這是一個純手工打造的現代響應式 landing page，使用 HTML、CSS 和 JavaScript，無須依賴任何前端框架。專案展示了如何使用基礎網頁技術實現高效能、美觀且互動性強的產品展示頁面，適合各類企業服務、產品或品牌形象展示。
 
 ## 目錄
 
-- [Enjoy Landing Page](#enjoy-landing-page-)
+- [Enjoy Landing Page ](#enjoy-landing-page-)
   - [目錄](#目錄)
   - [專案概述](#專案概述)
   - [專案結構](#專案結構)
@@ -110,6 +110,7 @@ enjoy-landing-page/
 | 版本 | 日期 | 說明 |
 |------|------|------|
 | 1.0.0 | 2025/9/20 | 首次發布，包含首頁、關於頁面和聯絡頁面的基本功能 |
+| 1.1.0 | 2025/9/21 | 重新設計聯絡頁面為左右兩列布局，優化CSS結構和移除未使用樣式 |
 
 ## 開發團隊
 
@@ -123,5 +124,5 @@ enjoy-landing-page/
 如有任何問題、建議或合作機會，歡迎聯繫：
 
 - **技術支援**：[suj811014@gmail.com](mailto:suj811014@gmail.com)
-- **GitHub Issues**：[提交問題或建議](https://github.com/yourusername/enjoy-landing-page/issues)
+- **GitHub Issues**：[提交問題或建議](https://github.com/suj811014/enjoy-landing-page/issues)
 - **官方網站**：[Enjoy Develop](https://enjoy-develop.com)
